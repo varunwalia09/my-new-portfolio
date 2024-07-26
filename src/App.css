@@ -132,3 +132,182 @@ navbar-1 li{
     font-size: 24px;
 }
 /* code typewriter css */
+.intro h2 span{
+    display: inline-block;
+    animation: typing 2s step(2) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 25%;
+    }
+}
+.intro h1{
+    margin: 0;
+    font-size: 2em;
+    align-self: flex-start;
+}
+.intro h2{
+    padding: 15px;
+    font-size: 20px;
+}
+.intro::first-letter{
+    color: orange;
+}
+.intro h2::first-letter{
+    color: orange;
+}
+/* My education part start */
+.EDU-container h1{
+    text-decoration: underline;
+    margin-top: 40px;
+    padding-top: 20%;
+}
+.EDU-container-2{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+}
+.EDU-4,
+.EDU-5,
+.EDU-6{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    border:1px solid #ccc;
+    padding-right: 40px;
+    margin: 20px;
+}
+.EDU-4,
+.EDU-5,
+.EDU-6{
+    border-width: 10px;
+    border-style: groove;
+    border-color: white;
+}
+.EDU-4 p,
+.EDU-5 p,
+.EDU-6 p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 35px;
+}
+.EDU-4 img{
+    margin-left: 25px;
+    border-radius: 50px;
+    padding: 40px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+    animation:fillSkill 3s ease-in-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fillSkill{
+    to{
+        width: 100%;
+    }
+}
+.EDU-5 img{
+    margin-left: 25px;
+    border-radius: 50px;
+    padding: 40px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+    animation:fillSkill 3s ease-in-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fillSkill{
+    to{
+        width: 100%;
+    }
+}
+.EDU-6 img{
+    margin-left: 25px;
+    border-radius: 50px;
+    padding: 40px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+    animation:fillSkill 3s ease-in-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fillSkill{
+    to{
+        width: 100%;
+    }
+}
+/* my Education part END */
+
+/* Home page front-end part start */
+.skills-1 h1{
+    padding: 20px;
+    color: orange;
+    font-size: 30px;
+}
+.myimg a{
+    text-decoration: none;
+}
+.myimg a p{
+    text-decoration: none;
+    color: white;
+}
+.myimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.myimg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    margin: 15px;
+}
+.myimg img:hover{
+    transform:scale(1.8);
+    border : 1px solid orangered;
+}
+.center-page{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.center{
+    margin-top: 10px;
+}
+.center-page h1{
+    margin: 100px;
+    margin-left: 5%;
+    font-size: 30px;
+    color: orangered;
+}
+.center-page h2{
+    padding: 20px;
+    margin: 15px;
+    float: left;
+    color: #ff4d01;
+    row-gap: 20px;
+    text-align: center;
+    margin-left: 75px;
+    font-size: 25px;
+}
+/* Home page front-end part End */
