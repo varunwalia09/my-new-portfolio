@@ -24,7 +24,7 @@ body {
     background-color: rgba(27, 27, 76, 0.698);
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     border-radius: 20px;
@@ -311,3 +311,283 @@ navbar-1 li{
     font-size: 25px;
 }
 /* Home page front-end part End */
+
+
+
+/* about start */
+.top-img{
+    text-align: center;
+    justify-content: center;
+    margin: 5px; 
+    height: 100vh; 
+    padding: 30px;
+  color: white;
+  }
+  .top-img1 img{
+    width: 20rem; 
+    height: auto;
+    float: left;
+    cursor: pointer;
+    border-radius: 0%; 
+      border-radius: 20%;
+    border:2px solid whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    margin: 4rem;
+    mix-blend-mode: normal; 
+    animation: bounce 02s alternate infinite; 
+    transition: transform 0.3s; 
+    transform: translateY(-10px); 
+  }
+  
+  .intro1 h1 {
+    margin: 0; 
+    font-size: 2em; 
+    font-weight: bold; 
+    align-self: flex-start; 
+  }
+  .intro1 h2{
+    padding: 35px;
+    font-size: 30px;
+  
+  }
+  .intro1 ::first-letter{
+    color: orange;
+  }
+  .intro1 h2::first-letter{
+    color: orange;
+  }
+  .intro1 span{
+    color:wheat;
+  }
+  .h1-container  {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    color: orangered;
+    padding: 60px;
+    
+    
+  }
+  
+  .abt-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .box-1,
+  .box-2,
+  .box-3{
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+    padding-right: 40px; 
+    margin: 20px; 
+  }
+  .box-1,
+  .box-2,
+  .box-3{
+    border-width: 15px; 
+      border-style:groove ; 
+      border-color: white; 
+  }
+  .box-1 p,
+  .box-2 p,
+  .box-3 p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: orangered; 
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 35px;
+  }
+  
+  
+  
+  .box-1 img,
+  .box-2 img,
+  .box-3 img
+   {
+    margin: 20px;
+    padding: 20px;
+    width: 80%; 
+    height: auto; 
+    margin-bottom: 5px; 
+   
+    animation: fillSkill 3s ease-in-out forwards; 
+  }
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
+    }
+  }
+  
+  /* bottom about certificates*/
+  .bottom-container {
+    gap: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+  text-align: center;
+    color: orangered;
+   
+    margin-bottom: 10%;
+  }
+  .bottom-container h1{
+    text-decoration: underline;
+    margin-top: 40px;
+    padding-top: 60px;
+  }
+  .abt-container-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    flex-wrap: wrap;
+  }
+  
+  .box-4,
+  .box-5,
+  .box-6{
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+    padding-right: 40px; 
+    margin: 20px; 
+   
+  }
+  .box-4,
+  .box-5,
+  .box-6{
+    border-width: 15px; 
+      border-style: groove; 
+      border-color: white; 
+  }
+  .box-4 p,
+  .box-5 p,
+  .box-6 p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: orangered; 
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 35px;
+  }
+  
+  .box-4 img,
+  .box-5 img,
+  .box-6 img
+   {
+    margin: 20px;
+    padding: 20px;
+    width: 80%; 
+    height: auto; 
+    margin-bottom: 5px; 
+    animation: fillSkill 3s ease-in-out forwards; 
+    animation-delay: 2s;
+  }
+  
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
+    }
+  }
+  
+  /* About page end */
+
+
+
+/* Skill part start */
+.skills h1{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 25px;
+    font-style: italic;
+    
+  }
+  .container {
+    width: 80%;
+    border-radius: 80px;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .skills p {
+    color: orangered;
+    text-align: left;
+    margin-left: 12px;
+  }
+  
+  /* Skill bars */
+  .container {
+    width: 0; 
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 5px;
+    border: 5px solid black;
+    animation: fillSkill 5s ease-in-out forwards; 
+  }
+  
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
+    }
+  }
+  /* Skill part end */
+  .html {width: 90%; background-color: #e1160f; color: black;}
+  .css {width: 80%; background-color: #2196F3; color: black;}
+  .js {width: 75%; background-color: #e1f436; color: black;}
+  .Tailwind {width: 85%; background-color: #3ca3f2; color: black;}
+  .React {width: 70%; background-color:rgb(53, 53, 215); color: black;}
+  .Firebase {width: 60%; background-color:rgb(64, 64, 177); color: black;}
+  .Next {width:60%; background-color: rgb(14, 196, 81); color: black;}
+  .Node {width:65%; background-color: rgba(13, 151, 55, 0.793); color: black;}
+  .MongoDB {width:80%; background-color: rgb(4, 123, 4); color: black;}
+  
+  
+  .btn{
+    float: left;
+    border: 2px solid black;
+    background-color: orangered;
+    color:black;
+    border-radius: 20%;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  
+  /* skills section end */
+
+
+
+
+
+
+
