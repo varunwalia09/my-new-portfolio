@@ -5,7 +5,6 @@
   }
   body{
     background-color: rgb(5, 47, 110);
-    /* background-color: rgb(7, 7, 7); */
   }
   
   /* home section start */
@@ -68,7 +67,6 @@
     justify-content: flex-end; 
     margin: 0;
     padding: 0;
-    /* gap: 2px; */
   }
   .navbar-1 li {
     margin-left: 20px;
@@ -146,7 +144,7 @@
   /* Typewriter animation */
   .intro h2 span {
     display: inline-block;
-    animation: typing 2s steps() forwards;
+    animation: typing 2s steps(2) forwards;
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid 
@@ -181,16 +179,6 @@
   }
   
   /* Educational part start*/
-  /* .EDU-container {
-    gap: 2px;
-    font-size: 30px;
-    font-weight: bold;
-    justify-content: center;
-  text-align: center;
-    color: orangered;
-    margin-bottom: 30%;
-  }
-   */
   
   .EDU-container h1{
     text-decoration: underline;
@@ -201,8 +189,6 @@
   .EDU-container-2{
     display: flex;
     justify-content: space-around;
-    /* margin-top: 10%; */
-   /* margin-bottom: 10%; */
     padding-bottom: 5%;
     flex-wrap: wrap;
   }
@@ -216,8 +202,8 @@
     align-items: center; 
     text-align: center; 
     border: 1px solid #ccc; 
-    padding-right: 40px;   /* create the images left right gap */
-    margin: 20px;   /* with 3 column gap */
+    padding-right: 40px;   
+    margin: 20px;   
   }
   
   .EDU-4,
@@ -242,9 +228,8 @@
   }
   
   .EDU-4 img{
-    margin-left: 25px;  /* create the images left right gap */
+    margin-left: 25px;  
     border-radius: 50px;
-    /* margin: 0; */
     padding: 40px;
     width: 50%; 
     height: auto; 
@@ -261,9 +246,8 @@
   }
   
   .EDU-5 img{
-    margin-left: 25px;  /* create the images left right gap */
+    margin-left: 25px;  
     border-radius: 50px;
-    /* margin: 0; */
     padding: 30px;
     width: 50%; 
     height: auto; 
@@ -279,9 +263,8 @@
     }
   }
   .EDU-6 img{
-    margin-left: 25px;  /* create the images left right gap */
+    margin-left: 25px;  
     border-radius: 50px;
-    /* margin: 0; */
     padding: 30px;
     width: 50%; 
     height: auto; 
@@ -305,7 +288,7 @@
      font-size: 30px;
     }
     .myimg a {
-      text-decoration: none; /* Remove underline from the link */
+      text-decoration: none; 
     }
     .myimg a p {
       text-decoration: none; 
@@ -451,9 +434,6 @@
     float: left;
     cursor: pointer;
     border-radius: 0%; 
-    /* border-width: 15px; 
-      border-style:groove ; 
-      border-color: white;  */
       border-radius: 20%;
     border:2px solid whitesmoke;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -535,13 +515,6 @@
     padding-left: 35px;
   }
   
-  /* .box-3 p{
-    color: orangered; 
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-    margin-bottom: 20px;
-  } */
   
   .box-1 img,
   .box-2 img,
@@ -654,16 +627,6 @@
     border-radius: 20px;
     border: 2px solid orangered;
   }
-  /* .contact-container {
-    margin: 80px;
-    padding: 10px;
-    margin-left: 35%;
-    color: orangered;
-    max-width: 550px;
-   background-image: url(../public/assest/back.jpg);
-    border-radius: 20px;
-    border: 2px solid orangered;
-  } */
   
   
   .contact-form {
@@ -701,7 +664,6 @@
     padding: 10px 20px;
     background-color: #4CAF50; 
     color: rgb(0, 0, 0);
-    /* border: none; */
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
