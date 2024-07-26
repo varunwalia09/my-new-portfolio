@@ -1,278 +1,324 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  body{
     background-color: rgb(5, 47, 110);
-}
-
-.home {
-    color: wheat;
-}
-
-body {
-    padding-top: 60px;
-}
-
-.top-1 {
+    /* background-color: rgb(7, 7, 7); */
+  }
+  
+  /* home section start */
+  .home{
+    color:wheat;
+  }
+  
+  body {
+    padding-top: 60px; 
+  }
+  
+  .top-1{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: rgba(27, 27, 76, 0.698);
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-.logo-1{
+    z-index: 1000; 
+  background-color: rgba(27, 27, 76, 0.698);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  }
+  .logo-1{
     font-size: 25px;
     text-decoration: none;
     border-radius: 10px;
-}
-.logo-1 p{
+  }
+  
+  
+  .logo-1 p{
     margin: 0;
     font-size: 1.5em;
     padding: 5px;
     color: white;
     font-weight: bold;
-}
-.logo-1 p::first-letter{
+  }
+  .logo-1 p::first-letter{
     color: orangered;
-}
-.top-1 .logo-1{
+   
+  }
+  .top-1 .logo-1{
     mix-blend-mode: normal;
-    animation:bounce 03s alternate infinite;
-    transition: transform 0.3s;
+    animation: bounce 03s alternate infinite;
+    transition: transform 0.3s; 
     transform: translateY(-10px);
-}
-@keyframes bounce {
-    0%, 100%{
-        transform: translateY(0);
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
     }
-    50%{
-        transform: translateY(-10px);
+    50% {
+      transform: translateY(-10px); 
     }
-}
-.navbar-1{
+  }
+  .navbar-1 {
     list-style: none;
-    display:flex;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end; 
     margin: 0;
     padding: 0;
-}
-navbar-1 li{
-    margin-left:20px;
-}
-.navbar-1 li::first-letter{
+    /* gap: 2px; */
+  }
+  .navbar-1 li {
+    margin-left: 20px;
+  }
+  
+  .navbar-1 li::first-letter{
     color: orangered;
-}
-.navbar-1 a{
-    text-decoration: none;
+  }
+  .navbar-1 a {
+    text-decoration: none; 
     color: inherit;
-}
-.navbar-1 li{
-    margin-right: 40px;
-    color: white;
+  }
+  
+   .navbar-1 li {
+    margin-right: 40px; 
+    color:white;
     margin-bottom: 10px;
     opacity: 1;
     transition: 0.3s;
     font-size: 30px;
-}
-.navbar01 li a.active,
-.navbar01 li a:hover{
-    color:#ff4d01;
+  }
+  
+  
+  .navbar-1 li a.active,
+  .navbar-1 li a:hover {
+    color: #ff4d01;
     padding: 0.5rem 0;
-}
-.home{
+  }
+  
+  .home{
     text-align: center;
     justify-content: center;
     margin: 15px;
     height: 100vh;
     padding: 40px;
-}
-
-.home-img img{
+    
+  }
+  
+  .home-img img{
     width: 40rem;
     height: auto;
     border-radius: 20%;
     float: left;
     margin: 20px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(37,172,250,0.6);
+    box-shadow: 10px 10px 10px rgba(37, 172, 250, 0.6);
     margin: 4rem;
     mix-blend-mode: normal;
     animation: bounce 02s alternate infinite;
     transition: transform 0.3s;
     transform: translateY(-10px);
-}
-@keyframes bounce{
-    0%, 100%{
-        transform: translateY(0);
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
     }
-    50%{
-        transform: translateY(-10);
+    50% {
+      transform: translateY(-10px); 
     }
-}
-.home-img img:hover{
+  }
+  .home-img img:hover{
     border: 2px solid orangered;
     transform: scale(1.8);
-}
-
-/*  home page skils class start */
-.intro h2{
-    overflow: hidden;
-    white-space: nowrap;
+  }
+  
+  /* skills start */
+  .intro h2 {
+    overflow: hidden; 
+    white-space: nowrap; 
     margin: 0;
-    padding: 0;
+    padding: 0; 
     font-size: 24px;
-}
-/* code typewriter css */
-.intro h2 span{
+  }
+  
+  /* Typewriter animation */
+  .intro h2 span {
     display: inline-block;
-    animation: typing 2s step(2) forwards;
+    animation: typing 2s steps() forwards;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid;
-}
-@keyframes typing{
-    from{
-        width: 0;
+    border-right: .15em solid 
+  }
+  
+  
+  @keyframes typing {
+    from {
+      width: 0;
     }
-    to{
-        width: 25%;
+    to {
+      width: 25%;
     }
-}
-.intro h1{
-    margin: 0;
-    font-size: 2em;
-    align-self: flex-start;
-}
-.intro h2{
+  }
+  
+  .intro h1 {
+    margin: 0; 
+    font-size: 2em; 
+    align-self: flex-start; 
+  
+  }
+  .intro h2{
     padding: 15px;
     font-size: 20px;
-}
-.intro::first-letter{
+  
+  }
+  .intro::first-letter{
     color: orange;
-}
-.intro h2::first-letter{
+  }
+  .intro h2::first-letter{
     color: orange;
-}
-/* My education part start */
-.EDU-container h1{
+  }
+  
+  /* Educational part start*/
+  /* .EDU-container {
+    gap: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+  text-align: center;
+    color: orangered;
+    margin-bottom: 30%;
+  }
+   */
+  
+  .EDU-container h1{
     text-decoration: underline;
     margin-top: 40px;
     padding-top: 20%;
-}
-.EDU-container-2{
+    
+  }
+  .EDU-container-2{
     display: flex;
     justify-content: space-around;
+    /* margin-top: 10%; */
+   /* margin-bottom: 10%; */
     padding-bottom: 5%;
     flex-wrap: wrap;
-}
-.EDU-4,
-.EDU-5,
-.EDU-6{
-    width: 30%;
+  }
+  .EDU-4,
+  .EDU-5,
+  .EDU-6{
+    width: 30%; 
     display: flex;
     flex-direction: column;
     border-radius: 50px;
-    align-items: center;
-    border:1px solid #ccc;
-    padding-right: 40px;
-    margin: 20px;
-}
-.EDU-4,
-.EDU-5,
-.EDU-6{
-    border-width: 10px;
-    border-style: groove;
-    border-color: white;
-}
-.EDU-4 p,
-.EDU-5 p,
-.EDU-6 p{
+    align-items: center; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+    padding-right: 40px;   /* create the images left right gap */
+    margin: 20px;   /* with 3 column gap */
+  }
+  
+  .EDU-4,
+  .EDU-5,
+  .EDU-6{
+    border-width: 10px; 
+      border-style: groove; 
+      border-color: white; 
+  }
+  .EDU-4 p,
+  .EDU-5 p,
+  .EDU-6 p{
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: orangered;
+    color: orangered; 
     font-weight: bold;
     font-style: italic;
     font-size: 15px;
     padding-left: 35px;
-}
-.EDU-4 img{
-    margin-left: 25px;
+  
+  }
+  
+  .EDU-4 img{
+    margin-left: 25px;  /* create the images left right gap */
     border-radius: 50px;
+    /* margin: 0; */
     padding: 40px;
-    width: 50%;
-    height: auto;
-    margin-bottom: 0;
-    animation:fillSkill 3s ease-in-out forwards;
+    width: 50%; 
+    height: auto; 
+    margin-bottom: 0; 
+    animation: fillSkill 3s ease-in-out forwards; 
     animation-delay: 2s;
-}
-@keyframes fillSkill{
-    to{
-        width: 100%;
+  }
+  
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
     }
-}
-.EDU-5 img{
-    margin-left: 25px;
+  }
+  
+  .EDU-5 img{
+    margin-left: 25px;  /* create the images left right gap */
     border-radius: 50px;
-    padding: 40px;
-    width: 50%;
-    height: auto;
-    margin-bottom: 0;
-    animation:fillSkill 3s ease-in-out forwards;
+    /* margin: 0; */
+    padding: 30px;
+    width: 50%; 
+    height: auto; 
+    margin-bottom: 0; 
+    animation: fillSkill 3s ease-in-out forwards; 
     animation-delay: 2s;
-}
-@keyframes fillSkill{
-    to{
-        width: 100%;
+  }
+  
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
     }
-}
-.EDU-6 img{
-    margin-left: 25px;
+  }
+  .EDU-6 img{
+    margin-left: 25px;  /* create the images left right gap */
     border-radius: 50px;
-    padding: 40px;
-    width: 50%;
-    height: auto;
-    margin-bottom: 0;
-    animation:fillSkill 3s ease-in-out forwards;
+    /* margin: 0; */
+    padding: 30px;
+    width: 50%; 
+    height: auto; 
+    margin-bottom: 0; 
+    animation: fillSkill 3s ease-in-out forwards; 
     animation-delay: 2s;
-}
-@keyframes fillSkill{
-    to{
-        width: 100%;
+  }
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
     }
-}
-/* my Education part END */
-
-/* Home page front-end part start */
-.skills-1 h1{
+  }
+  
+  /* Educational part end */
+  
+  
+  /* fron-end start */
+  .skills-1 h1{
     padding: 20px;
-    color: orange;
-    font-size: 30px;
-}
-.myimg a{
-    text-decoration: none;
-}
-.myimg a p{
-    text-decoration: none;
-    color: white;
-}
-.myimg{
+     color: orange;
+     font-size: 30px;
+    }
+    .myimg a {
+      text-decoration: none; /* Remove underline from the link */
+    }
+    .myimg a p {
+      text-decoration: none; 
+      color: white;
+    }
+  .myimg{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     cursor: pointer;
-}
-.myimg img{
+  }
+  .myimg img{
     width: 50px;
     height: 50px;
     border-radius: 5%;
@@ -280,42 +326,118 @@ navbar-1 li{
     display: inline-block;
     flex-direction: row;
     margin: 15px;
-}
-.myimg img:hover{
-    transform:scale(1.8);
-    border : 1px solid orangered;
-}
-.center-page{
-    flex-direction:column;
+  }
+  .myimg img:hover{
+    transform: scale(1.8);
+    border: 1px solid orangered;
+  }
+  .center-page {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
-}
-.center{
-    margin-top: 10px;
-}
-.center-page h1{
-    margin: 100px;
-    margin-left: 5%;
-    font-size: 30px;
-    color: orangered;
-}
-.center-page h2{
-    padding: 20px;
-    margin: 15px;
-    float: left;
-    color: #ff4d01;
-    row-gap: 20px;
-    text-align: center;
-    margin-left: 75px;
+    height: 60vh; 
+  }
+  
+  .center {
+    margin-top: 10px; 
+  }
+  
+  .center-page h1{
+      margin: 100px;
+      margin-left: 5%;
+      font-size: 30px;
+      color: orangered;
+      
+    }
+  .center-page h2{
+      padding: 20px;
+      margin: 15px;
+      float: left;
+      color: #ff4d01;
+      row-gap: 20px;
+      text-align: center;
+      margin-left: 75px;
+      font-size: 25px;
+    }
+    
+  
+  
+  
+  
+  /* Skill part start */
+  .skills h1{
+    color: orange;
+    display: flex;
+    justify-content: center;
     font-size: 25px;
-}
-/* Home page front-end part End */
-
-
-
-/* about start */
-.top-img{
+    font-weight: 25px;
+    font-style: italic;
+    
+  }
+  .container {
+    width: 80%;
+    border-radius: 80px;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .skills p {
+    color: orangered;
+    text-align: left;
+    margin-left: 12px;
+  }
+  
+  /* Skill bars */
+  .container {
+    width: 0; 
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 5px;
+    border: 5px solid black;
+    animation: fillSkill 5s ease-in-out forwards; 
+  }
+  
+  
+  @keyframes fillSkill {
+    to {
+      width: 100%; 
+    }
+  }
+  /* Skill part end */
+  .html {width: 90%; background-color: #e1160f; color: black;}
+  .css {width: 80%; background-color: #2196F3; color: black;}
+  .js {width: 75%; background-color: #e1f436; color: black;}
+  .Tailwind {width: 85%; background-color: #3ca3f2; color: black;}
+  .React {width: 70%; background-color:rgb(53, 53, 215); color: black;}
+  .Firebase {width: 60%; background-color:rgb(64, 64, 177); color: black;}
+  .Next {width:60%; background-color: rgb(14, 196, 81); color: black;}
+  .Node {width:65%; background-color: rgba(13, 151, 55, 0.793); color: black;}
+  .MongoDB {width:80%; background-color: rgb(4, 123, 4); color: black;}
+  
+  
+  .btn{
+    float: left;
+    border: 2px solid black;
+    background-color: orangered;
+    color:black;
+    border-radius: 20%;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  /* skills section end */
+  
+  
+  
+  /* about start */
+  .top-img{
     text-align: center;
     justify-content: center;
     margin: 5px; 
@@ -329,6 +451,9 @@ navbar-1 li{
     float: left;
     cursor: pointer;
     border-radius: 0%; 
+    /* border-width: 15px; 
+      border-style:groove ; 
+      border-color: white;  */
       border-radius: 20%;
     border:2px solid whitesmoke;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -410,7 +535,13 @@ navbar-1 li{
     padding-left: 35px;
   }
   
-  
+  /* .box-3 p{
+    color: orangered; 
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+  } */
   
   .box-1 img,
   .box-2 img,
@@ -508,86 +639,227 @@ navbar-1 li{
     }
   }
   
-  /* About page end */
-
-
-
-/* Skill part start */
-.skills h1{
-    color: orange;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 25px;
-    font-style: italic;
-    
-  }
-  .container {
-    width: 80%;
-    border-radius: 80px;
-    background-color: #ddd;
-  }
   
-  .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  
+  
+  /* Contact page details */
+  
+  .contact-container {
+    margin: 80px;
+    padding: 10px;
+    margin-left: 35%;
+    color: orangered;
+    max-width: 550px;
+   background-image: url(../public/assest/back.jpg);
+    border-radius: 20px;
+    border: 2px solid orangered;
+  }
+  /* .contact-container {
+    margin: 80px;
+    padding: 10px;
+    margin-left: 35%;
+    color: orangered;
+    max-width: 550px;
+   background-image: url(../public/assest/back.jpg);
+    border-radius: 20px;
+    border: 2px solid orangered;
+  } */
+  
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
   }
-  .skills p {
-    color: orangered;
-    text-align: left;
-    margin-left: 12px;
-  }
-  
-  /* Skill bars */
-  .container {
-    width: 0; 
-    color: black;
-    margin-top: 5px;
+  .contact-container h2{
     text-align: center;
-    line-height: 5px;
-    border: 5px solid black;
-    animation: fillSkill 5s ease-in-out forwards; 
-  }
-  
-  
-  @keyframes fillSkill {
-    to {
-      width: 100%; 
-    }
-  }
-  /* Skill part end */
-  .html {width: 90%; background-color: #e1160f; color: black;}
-  .css {width: 80%; background-color: #2196F3; color: black;}
-  .js {width: 75%; background-color: #e1f436; color: black;}
-  .Tailwind {width: 85%; background-color: #3ca3f2; color: black;}
-  .React {width: 70%; background-color:rgb(53, 53, 215); color: black;}
-  .Firebase {width: 60%; background-color:rgb(64, 64, 177); color: black;}
-  .Next {width:60%; background-color: rgb(14, 196, 81); color: black;}
-  .Node {width:65%; background-color: rgba(13, 151, 55, 0.793); color: black;}
-  .MongoDB {width:80%; background-color: rgb(4, 123, 4); color: black;}
-  
-  
-  .btn{
-    float: left;
-    border: 2px solid black;
-    background-color: orangered;
-    color:black;
-    border-radius: 20%;
-    margin: 20px;
-    padding: 10px;
     font-weight: bold;
     font-size: 20px;
-    cursor: pointer;
   }
-
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
   
-  /* skills section end */
-
-
-
-
-
-
-
+  .form-group label {
+    font-weight: bold; 
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="mobile"],
+  input[type="message"],
+  textarea {
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+  }
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: rgb(0, 0, 0);
+    /* border: none; */
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+  
+  }
+  .contact-page button:hover{
+    border: 2px solid orangered;
+  }
+  
+  .address3 .btn-sub:hover {
+    border: 2px solid orangered;
+    background-color: #45a049; 
+  }
+  
+  .cont-img{
+  float: right;
+   
+  }
+  
+  /* Styles for social media icons */
+  .social-icons {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    margin: 4px;
+  
+  }
+  .social-links h3{
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  }
+  
+  .social-icons .social-icon {
+    transition: color 0.3s; 
+  }
+  
+  .facebook{
+    color: #0077b5;
+  }
+  .twitter{
+    color: #0077b5;
+    
+   
+  }
+  .instagram{
+    color: #0077b5;
+  }
+  .linkedin{
+    color: #0077b5;
+  }
+  .github{
+    color: #0077b5;
+  }
+  .facebook:hover,
+  .twitter:hover,
+  .instagram:hover,
+  .linkedin:hover,
+  .github:hover {
+    color: #ff4d01; 
+  }
+  
+  .social-icons1 {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 30px;
+  
+  }
+  .social-links h3{
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  }
+  .address{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    color: wheat;
+    font-size: 20px;
+  }
+  .address {
+    animation: zoomIn 3s ease-in-out forwards; 
+    animation-delay: 1s;
+  }
+  
+  /* Animation for zooming in */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0); 
+    }
+    to {
+      transform: scale(1); 
+    }
+  }
+  
+  .address1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+  
+    font-size: 20px;
+  }
+  .address2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  .address3{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  
+  
+  
+    /* footer start */
+  .footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: orangered;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    padding: 10px; 
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .footer p:hover {
+    text-decoration: underline black;
+    color: blue; 
+  }
+  
+  .space {
+    padding-left: 10px;
+  }
+  /* footer end */
