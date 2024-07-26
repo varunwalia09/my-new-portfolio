@@ -43,7 +43,7 @@ function About() {
         </div>
         <div className="box-3">
           <a href="https://kissansilage-project.vercel.app/" target="blank">
-            <img src="./assest/kissan.png" alt="kissan.png" />
+            <img src="./assest/Kissan.png" alt="Kissan.png" />
           </a>
           <p>Kissan Silage</p>
         </div>
