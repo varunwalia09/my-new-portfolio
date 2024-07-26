@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(5, 47, 110);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+    color: wheat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    padding-top: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.top-1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(27, 27, 76, 0.698);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.logo-1{
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.logo-1 p{
+    margin: 0;
+    font-size: 1.5em;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.logo-1 p::first-letter{
+    color: orangered;
+}
+.top-1 .logo-1{
+    mix-blend-mode: normal;
+    animation:bounce 03s alternate infinite;
+    transition: transform 0.3s;
+    transform: translateY(-10px);
+}
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.navbar-1{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+navbar-1 li{
+    margin-left:20px;
+}
+.navbar-1 li::first-letter{
+    color: orangered;
+}
+.navbar-1 a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar-1 li{
+    margin-right: 40px;
+    color: white;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: 0.3s;
+    font-size: 30px;
+}
+.navbar01 li a.active,
+.navbar01 li a:hover{
+    color:#ff4d01;
+    padding: 0.5rem 0;
+}
+.home{
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+    height: 100vh;
+    padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-img img{
+    width: 40rem;
+    height: auto;
+    border-radius: 20%;
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(37,172,250,0.6);
+    margin: 4rem;
+    mix-blend-mode: normal;
+    animation: bounce 02s alternate infinite;
+    transition: transform 0.3s;
+    transform: translateY(-10px);
 }
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10);
+    }
+}
+.home-img img:hover{
+    border: 2px solid orangered;
+    transform: scale(1.8);
+}
+
+/*  home page skils class start */
+.intro h2{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+/* code typewriter css */
