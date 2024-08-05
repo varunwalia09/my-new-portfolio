@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import NavBar from './Components/NavBar';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/skills" element={<Skills/>}/>
         <Route path="/contatc" element={<Contact/>}/>
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   );
