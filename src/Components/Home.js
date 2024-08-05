@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-
+import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = ["Front-End Web Developer", "YouTuber", "Coder", "Gamer"];
-  const [currentRole, setCurrentRole] = useState("");
+  // const [currentRole, setCurrentRole] = useState("");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -14,19 +14,19 @@ function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-  useEffect(() => {
-    const typingEffect = () => {
-      const currentText = roles[roleIndex];
-      let i = 0;
-      const typingInterval = setInterval(() => {
-        setCurrentRole((prevRole) => currentText.slice(0, i + 1));
-        i++;
-        if (i === currentText.length) clearInterval(typingInterval);
-      }, 200);
-    };
+  // useEffect(() => {
+  //   const typingEffect = () => {
+  //     const currentText = roles[roleIndex];
+  //     let i = 0;
+  //     const typingInterval = setInterval(() => {
+  //       setCurrentRole((prevRole) => currentText.slice(0, i + 1));
+  //       i++;
+  //       if (i === currentText.length) clearInterval(typingInterval);
+  //     }, 200);
+  //   };
 
-    typingEffect();
-  }, [roleIndex]);
+  //   typingEffect();
+  // }, [roleIndex]);
   return (
     <div className="home">
       <div className="home-img">
@@ -37,7 +37,18 @@ function Home() {
           Hello, Myself <span>Varun Walia</span>
         </h1>
         <h2>
-          <span>I'm a {currentRole}</span>
+          <span>
+            I'm a{" "}
+            <Typewriter
+              words={[roles[roleIndex]]}
+              loop={false}
+              cursor
+              cursorStyle="|"
+              typeSpeed={80}
+              deleteSpeed={50}
+              delaySpeed={2000}
+            />
+          </span>
         </h2>
       </div>
 
@@ -146,30 +157,30 @@ function Home() {
         <div className="EDU-container">
           <h1>Education</h1>
           <div className="EDU-container-2">
-
             <div className="EDU-4">
-                <img src="./assest/pseb.jpg" alt="pseb" />
+              <img src="./assest/pseb.jpg" alt="pseb" />
               <p> 10th (PSEB)</p>
-              <p>Passed My 10th class from 
-                S.M.M. School at Rajpura in 2010 with the grade of 65.36%
+              <p>
+                Passed My 10th class from S.M.M. School at Rajpura in 2010 with
+                the grade of 65.36%
               </p>
             </div>
 
             <div className="EDU-5">
-                <img src="./assest/12th.png" alt="Backend.png" />
+              <img src="./assest/12th.png" alt="Backend.png" />
               <p>12th (PSEB)</p>
-              <p>Passed My 12th class from 
-              GOVT. SER. SEC. SCHOOL RAJPURA in 2012 with the grade of 64.60%
+              <p>
+                Passed My 12th class from GOVT. SER. SEC. SCHOOL RAJPURA in 2012
+                with the grade of 64.60%
               </p>
             </div>
 
             <div className="EDU-6">
-                <img
-                  src="./assest/PMN.jpg"
-                  alt="PMN.jpg"
-                />
+              <img src="./assest/PMN.jpg" alt="PMN.jpg" />
               <p>Bachelor of Journalism and Mass Communication</p>
-              <p> Passed My Graducation 2017 From Patel Memorial National College 
+              <p>
+                {" "}
+                Passed My Graducation 2017 From Patel Memorial National College
               </p>
             </div>
           </div>
